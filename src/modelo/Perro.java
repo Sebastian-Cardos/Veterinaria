@@ -18,6 +18,26 @@ public class Perro extends Mascota {
         m = fechaActual.get(Calendar.MONTH) + 1;
         a = fechaActual.get(Calendar.YEAR);
 
-        
+      if(a == consulta.getAnio()){
+        if((m-consulta.getMes())<=3 && (d<consulta.getDia())){
+            this.vacunaAntirrabicaAlDia = true;
+            } else {
+            this.vacunaAntirrabicaAlDia = false;
+        }
+      }else{
+        if((m+11 - consulta.getMes())<=3 && (d<consulta.getDia())){
+            this.vacunaAntirrabicaAlDia = true;
+            } else {
+            this.vacunaAntirrabicaAlDia = false;
+        }
+      }
+    }
+
+    public String getNvlAgresividad() {
+        return nvlAgresividad;
+    }
+
+    public boolean getVacunaAntirrabicaAlDia(){
+        return vacunaAntirrabicaAlDia;
     }
 }
