@@ -11,8 +11,16 @@ public abstract class Usuario {
 	protected int idUsuario;
 	protected static int contadorUsuarios;
 	
-	public Usuario() {
-		// TODO Auto-generated constructor stub
+	public Usuario(String nombre, String apellidos, String nombreUsuario, int edad, String celular, String direccion,
+			int idUsuario) {
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.nombreUsuario = nombreUsuario;
+		this.celular = celular;
+		this.direccion = direccion;
+		this.idUsuario = idUsuario;
+		setEdad(edad);
+		setCelular(celular);
 		
 	}
 
