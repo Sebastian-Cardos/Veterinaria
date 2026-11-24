@@ -25,4 +25,6 @@ public class Mascota {
         this.esterilzado = esterilzado;
         this.sexo = sexo;
     }
+
+    
 }
