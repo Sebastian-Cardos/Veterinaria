@@ -19,12 +19,24 @@ public class Dueno extends Usuario{
 		this.perros.add(perro);
 	}
 	
+	public ArrayList<Perro> getPerro(){
+		return this.perros;
+	}
+	
 	public void agregarGato(Gato gato) {
 		this.gatos.add(gato);
 	}
 	
+	public ArrayList<Gato> getGato(){
+		return this.gatos;
+	}
+	
 	public void agregarAve(Aves ave) {
 		this.aves.add(ave);
+	}
+	
+	public ArrayList<Ave> getAve(){
+		return this.aves;
 	}
 
 }
