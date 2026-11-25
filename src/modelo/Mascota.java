@@ -26,5 +26,44 @@ public class Mascota {
         this.sexo = sexo;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public double getTemperatura() {
+        return temperatura;
+    }
+
+    public int getIdMascota() {
+        return idMascota;
+    }
+
+    public String getObservaciones() {
+        return observaciones;
+    }
+
+    public boolean getEsterilizado(){
+        return esterilzado;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public static int getContadorMascotas() {
+        return contadorMascotas;
+    }
     
 }
