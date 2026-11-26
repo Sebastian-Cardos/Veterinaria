@@ -15,15 +15,18 @@ public class Dueno extends Usuario{
 		this.aves = new ArrayList<>();
 	}
 	
-	public void agregarPerro(Perro perro) {
+	public void addPerro(Perro perro) {
+		this.cantPets++;
 		this.perros.add(perro);
+		
 	}
 	
 	public ArrayList<Perro> getPerro(){
 		return this.perros;
 	}
 	
-	public void agregarGato(Gato gato) {
+	public void addGato(Gato gato) {
+		this.cantPets++;
 		this.gatos.add(gato);
 	}
 	
@@ -31,7 +34,8 @@ public class Dueno extends Usuario{
 		return this.gatos;
 	}
 	
-	public void agregarAve(Aves ave) {
+	public void addAve(Ave ave) {
+		this.cantPets++;
 		this.aves.add(ave);
 	}
 	

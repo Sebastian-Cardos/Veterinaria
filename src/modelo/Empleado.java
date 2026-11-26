@@ -23,6 +23,8 @@ public class Empleado extends Usuario{
 		case 2:
 			this.estado = "Día libre";
 			break;
+		default:
+			throw new IllegalArgumentException("Dato no válido. Intente de nuevo");
 		}
 	}
 	
